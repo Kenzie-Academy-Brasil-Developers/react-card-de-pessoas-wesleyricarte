@@ -1,0 +1,61 @@
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    gap: 10%;
+
+    background-color: var(--color-grey-4);
+}
+
+.HomeInfo {
+    display: flex;
+    flex-direction: column;
+
+    width: 22%;
+    gap: 2rem;
+}
+
+.HomeInfo button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 48px;
+    padding: 0rem 1rem;
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+.HomeInfo button:hover {
+    color: var(--color-grey-1);
+}
+
+.HomeImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35%;
+}
+
+.HomeImg > img {
+    display: flex;
+    width: 100%;
+}
+
+
+
+@media (max-width: 900px) {
+    .HomeImg {
+        display: none;
+    }
+    .HomeInfo {
+        width: 90%;
+    }
+}

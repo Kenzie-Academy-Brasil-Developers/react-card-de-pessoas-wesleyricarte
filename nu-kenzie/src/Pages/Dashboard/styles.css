@@ -1,0 +1,128 @@
+.App {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.App-header {
+    margin: 0 auto;
+
+    height: 88px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+
+    z-index: 10;
+}
+
+.container-header {
+    margin: 0 auto;
+    height: 88px;
+    width: 60rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.App-main {
+    margin: 127px auto;
+    margin-top: calc(88px + 39px);
+
+    min-height: calc(100vh - 88px - 39px);
+    width: 60rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.Section-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 35%;
+    gap: 1rem;
+}
+
+.Section-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 59%;
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+    .App-header {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 88px;
+        width: 100%;
+    }
+
+    .container-header {
+        height: 88px;
+        width: 90%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .App-main {
+        margin: 127px auto;
+        margin-top: calc(88px + 39px);
+
+        min-height: calc(100vh - 88px - 39px);
+        width: 90%;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        gap: 3rem;
+
+        /* background-color: aqua; */
+    }
+
+    .Section-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        min-height: 30rem;
+        width: 100%;
+
+        /* background-color: blue; */
+    }
+
+    .Section-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        margin-bottom: 3rem;
+
+        min-height: 600px;
+        width: 100%;
+
+        /* background-color: rgb(0, 255, 94); */
+    }
+
+}

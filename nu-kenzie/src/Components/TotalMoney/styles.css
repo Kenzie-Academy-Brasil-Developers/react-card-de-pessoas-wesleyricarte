@@ -1,0 +1,25 @@
+.container-total-money {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 1.5rem;
+    gap: 1rem;
+
+    background-color: var(--color-white);
+    border: solid 1px var(--color-grey-2);
+}
+
+.container-total-money > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.container-total-money > h5 {
+    display: flex;
+
+    width: 100%;
+}
